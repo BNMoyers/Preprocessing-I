@@ -1,1 +1,242 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-size: 62.5%;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: #F1EAE4;
+}
+.headerText {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4.5rem;
+}
+.defaultText {
+  color: gray;
+  font-size: 1rem;
+  font-family: 'Merriweather', serif;
+}
+.labelText {
+  font-family: 'Merriweather', serif;
+  font-size: 1.8rem;
+}
+.label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  padding: 5px;
+  border: 1px solid black;
+}
+.emptyBox {
+  border: 1px solid black;
+}
+.colorBox {
+  background-color: #C49239;
+}
+.chunk {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px;
+  width: 350px;
+}
+.container {
+  background-color: #F1EAE4;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  color: gray;
+  font-size: 1rem;
+  font-family: 'Merriweather', serif;
+}
+.container h2 {
+  color: black;
+  font-size: 1.8rem;
+}
+.container header {
+  display: flex;
+  background-color: #80A0A0;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+.container header div {
+  background-color: #F1EAE4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 200px;
+  padding: 10px;
+  outline: 1px solid gray;
+  outline-offset: -5px;
+}
+.container header div h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4.5rem;
+  padding-bottom: 10px;
+}
+.container header div h3 {
+  color: gray;
+  font-size: 1rem;
+  font-family: 'Merriweather', serif;
+}
+.container nav {
+  background-color: #F1EAE4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 5px;
+}
+.container nav a {
+  text-decoration: none;
+  color: gray;
+  font-size: 1rem;
+  font-family: 'Merriweather', serif;
+  padding: 5px;
+  align-items: center;
+}
+.container .top {
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+}
+.container .top .profile {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px;
+  width: 350px;
+}

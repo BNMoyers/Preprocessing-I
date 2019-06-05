@@ -20,7 +20,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -29,8 +29,12 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+
 body {
 	line-height: 1;
+	font-size: 62.5%;
+	
 }
 ol, ul {
 	list-style: none;
@@ -54,6 +58,120 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	background-color: @backgroundColor;
+}
+// Variables //
+
+@backgroundColor: #F1EAE4;
+@accentColor1: #80A0A0;
+@accentColor2: #C49239;
+
+// Mixins //
+.headerText{
+	font-family: 'Dancing Script', cursive;
+	font-size: 4.5rem;
+}
+.defaultText{
+	color: gray;
+	font-size: 1rem;
+	font-family: 'Merriweather', serif;
+
+}
+.labelText{
+	font-family: 'Merriweather', serif;
+	font-size: 1.8rem;
+}
+.label{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 400px;
+	padding: 5px;
+	border: 1px solid black;
+}
+.emptyBox{
+	border: 1px solid black;
+}
+.colorBox{
+	background-color: @accentColor2;
+}
+.chunk{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding: 10px;
+	width: 350px;
+}
+.container {
+	background-color: @backgroundColor;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width:100%;
+	justify-content: center;
+	.defaultText();
+
+	h2{
+		color: black;
+		font-size: 1.8rem;
+	}
+	header{
+		display: flex;
+		background-color: @accentColor1;
+		height: 400px;
+		justify-content: center;
+		align-items: center;
+		
+
+		
+		div{
+			background-color: @backgroundColor;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 600px;
+			height: 200px;
+			padding: 10px;
+			outline: 1px solid gray;
+			outline-offset: -5px;
+			
+
+			h1{
+				.headerText();
+				padding-bottom: 10px;
+			}
+			h3{
+				.defaultText();
+			}
+		}
+	}
+	nav{
+		background-color: @backgroundColor;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin: 5px;
+		
+		
+		a {
+			text-decoration: none;
+			.defaultText();
+			padding: 5px;
+			align-items: center;
+		}
+
+	}
+	.top{
+		display: flex;
+		margin: 10px;
+		justify-content: space-between;
+
+		.profile{
+			.chunk();
+			
+		}
+	}
 }
 
