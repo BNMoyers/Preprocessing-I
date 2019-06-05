@@ -133,15 +133,40 @@ table {
 html,
 body {
   height: 100%;
+  background-color: #F1EAE4;
 }
 .headerText {
   font-family: 'Dancing Script', cursive;
   font-size: 3.6rem;
 }
-body {
+.defaultText {
+  color: gray;
+  font-size: 1.6rem;
+  font-family: 'Merriweather', serif;
+}
+.container {
   background-color: #F1EAE4;
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding: 1%;
   justify-content: center;
+}
+.container header {
+  background-color: #80A0A0;
+  height: 400px;
+}
+.container header nav {
+  background-color: #F1EAE4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.container header nav a {
+  text-decoration: none;
+  color: gray;
+  font-size: 1.6rem;
+  font-family: 'Merriweather', serif;
+  padding: 5px;
+  align-items: center;
 }
