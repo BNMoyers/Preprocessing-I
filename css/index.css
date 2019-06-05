@@ -106,6 +106,7 @@ section {
 }
 body {
   line-height: 1;
+  font-size: 62.5%;
 }
 ol,
 ul {
@@ -137,35 +138,81 @@ body {
 }
 .headerText {
   font-family: 'Dancing Script', cursive;
-  font-size: 3.6rem;
+  font-size: 4.5rem;
 }
 .defaultText {
   color: gray;
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-family: 'Merriweather', serif;
+}
+.labelText {
+  font-family: 'Merriweather', serif;
+  font-size: 1.6rem;
+}
+.label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  padding: 5px;
+  border: 1px solid black;
+}
+.emptyBox {
+  border: 1px solid black;
+}
+.colorBox {
+  background-color: #C49239;
 }
 .container {
   background-color: #F1EAE4;
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 1%;
+  padding-top: 1%;
   justify-content: center;
+  color: gray;
+  font-size: 1rem;
+  font-family: 'Merriweather', serif;
 }
 .container header {
+  display: flex;
   background-color: #80A0A0;
   height: 400px;
+  justify-content: center;
+  align-items: center;
 }
-.container header nav {
+.container header div {
+  background-color: #F1EAE4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 200px;
+  padding: 10px;
+  outline: 1px solid gray;
+  outline-offset: -5px;
+}
+.container header div h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4.5rem;
+  padding-bottom: 10px;
+}
+.container header div h3 {
+  color: gray;
+  font-size: 1rem;
+  font-family: 'Merriweather', serif;
+}
+.container nav {
   background-color: #F1EAE4;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.container header nav a {
+.container nav a {
   text-decoration: none;
   color: gray;
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-family: 'Merriweather', serif;
   padding: 5px;
   align-items: center;

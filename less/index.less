@@ -33,6 +33,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	font-size: 62.5%;
 	
 }
 ol, ul {
@@ -69,13 +70,31 @@ html, body {
 // Mixins //
 .headerText{
 	font-family: 'Dancing Script', cursive;
-	font-size: 3.6rem;
+	font-size: 4.5rem;
 }
 .defaultText{
 	color: gray;
-	font-size: 1.6rem;
+	font-size: 1rem;
 	font-family: 'Merriweather', serif;
 
+}
+.labelText{
+	font-family: 'Merriweather', serif;
+	font-size: 1.6rem;
+}
+.label{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 400px;
+	padding: 5px;
+	border: 1px solid black;
+}
+.emptyBox{
+	border: 1px solid black;
+}
+.colorBox{
+	background-color: @accentColor2;
 }
 .container {
 	background-color: @backgroundColor;
@@ -83,28 +102,55 @@ html, body {
 	flex-direction: column;
 	justify-content: center;
 	width:100%;
-	padding: 1%;
+	padding-top: 1%;
 	justify-content: center;
+	.defaultText;
 
 	header{
+		display: flex;
 		background-color: @accentColor1;
 		height: 400px;
+		justify-content: center;
+		align-items: center;
+		
 
-		nav{
+		
+		div{
 			background-color: @backgroundColor;
 			display: flex;
-			flex-direction: row;
-			justify-content: space-around;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 600px;
+			height: 200px;
+			padding: 10px;
+			outline: 1px solid gray;
+			outline-offset: -5px;
 			
-			
-			a {
-				text-decoration: none;
-				.defaultText;
-				padding: 5px;
-				align-items: center;
-			}
 
+			h1{
+				.headerText;
+				padding-bottom: 10px;
+			}
+			h3{
+				.defaultText;
+			}
 		}
+	}
+	nav{
+		background-color: @backgroundColor;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		
+		
+		a {
+			text-decoration: none;
+			.defaultText;
+			padding: 5px;
+			align-items: center;
+		}
+
 	}
 }
 
